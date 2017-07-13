@@ -440,7 +440,11 @@ img {
   max-width: 26px;
   margin: -5px; }
 
+.page-header__menu-item {
+  padding-top: 5px; }
+
 .page-header__menu-item-open:hover {
+  padding-top: 0;
   border: 5px #ffea22 solid;
   border-radius: 6px 6px 0 0;
   background-color: #ffea22;

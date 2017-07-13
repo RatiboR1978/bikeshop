@@ -43,7 +43,12 @@
   margin: -5px;
 }
 
+.page-header__menu-item {
+  padding-top: 5px;
+}
+
 .page-header__menu-item-open:hover {
+  padding-top: 0;
   border: 5px #ffea22 solid;
   border-radius: 6px 6px 0 0;
   background-color: #ffea22;
@@ -77,6 +82,8 @@
   background-color: #ffea22;
   padding-bottom: 20px;
 }
+
+
 
 .page-header__menu li:hover .page-header__submenu {
   display: block;
