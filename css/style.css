@@ -474,6 +474,9 @@ img {
   border-radius: 0 6px 6px 6px; }
 
 .slider__img-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
   margin-top: -86px;
   width: 100%;
   min-height: 980px;
