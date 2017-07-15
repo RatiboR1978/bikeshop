@@ -374,15 +374,15 @@ textarea {
 
 @font-face {
   font-family: 'robotoregular';
-  src: url("fonts/Roboto-Regular-webfont.woff") format("woff"); }
+  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff"); }
 
 @font-face {
   font-family: 'robotolight';
-  src: url("fonts/Robotolight.woff") format("woff"); }
+  src: url("../fonts/Robotolight.woff") format("woff"); }
 
 @font-face {
   font-family: 'robotothin';
-  src: url("fonts/Roboto-Thin-webfont.woff") format("woff"); }
+  src: url("../fonts/Roboto-Thin-webfont.woff") format("woff"); }
 
 body {
   position: relative;
@@ -390,6 +390,11 @@ body {
 
 a {
   text-decoration: none; }
+
+h2 {
+  font-family: robotobold, Arial, sans-serif;
+  font-size: 18px;
+  color: black; }
 
 img {
   max-width: 100%;
@@ -448,7 +453,8 @@ img {
   border: 5px #ffea22 solid;
   border-radius: 6px 6px 0 0;
   background-color: #ffea22;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  margin-bottom: -20px; }
   .page-header__menu-item-open:hover a {
     color: black; }
 
@@ -471,18 +477,161 @@ img {
   background-color: #ffea22;
   padding-bottom: 20px; }
 
+.page-header__submenu li:first-child {
+  padding-top: 15px; }
+
+.page-header__submenu li:last-child {
+  padding-bottom: 10px; }
+
 .page-header__menu li:hover .page-header__submenu {
   display: block;
   width: 200px;
   border: 5px #ffea22 solid;
   border-radius: 0 6px 6px 6px; }
 
+.page-header__page-title {
+  position: relative;
+  z-index: 10;
+  text-align: center; }
+
+.page-header__title {
+  font-family: robotobold, Arial, sans-serif;
+  font-size: 50px;
+  color: white;
+  margin-top: 305px;
+  margin-bottom: 0; }
+
+.page-header__text {
+  font-family: robotothin, Arial, sans-serif;
+  font-size: 28px;
+  color: white;
+  margin-top: 14px; }
+  .page-header__text span {
+    color: #fcff19; }
+
+.page-header__but {
+  width: 124px;
+  height: 43px;
+  color: #fcff19;
+  font-family: robotobold, Arial, sans-serif;
+  font-size: 12px;
+  background-color: black;
+  border: 1px black solid;
+  border-radius: 6px;
+  cursor: pointer; }
+
 .slider__img-slider {
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: -86px;
   width: 100%;
   min-height: 980px;
   background: url("../img/slide.jpg") no-repeat;
   background-size: cover; }
+
+.slider__left-but {
+  position: absolute;
+  z-index: 10;
+  top: 450px;
+  left: 35px;
+  opacity: 0.5; }
+
+.slider__right-but {
+  position: absolute;
+  z-index: 10;
+  top: 450px;
+  right: 35px;
+  opacity: 0.5; }
+
+.slider__but--active {
+  opacity: 1; }
+
+.slider__scroll {
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  width: 66px;
+  margin-top: 295px; }
+
+.slider__line {
+  width: 384px;
+  height: 4px;
+  background-color: #fcff19;
+  position: absolute;
+  z-index: 10;
+  top: 978px;
+  left: 384px; }
+
+.categories {
+  background: url(../img/categories-bg.jpg) no-repeat;
+  background-size: cover; }
+
+.categories__title {
+  padding-top: 90px;
+  text-align: center;
+  margin-bottom: 72px; }
+
+.categories__blocks {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 170px; }
+
+.categories__block {
+  width: 346px;
+  height: 288px;
+  text-align: center;
+  position: relative; }
+  .categories__block h3 {
+    font-family: robotobold, Arial, sans-serif;
+    font-size: 15px;
+    color: #fcff19;
+    margin-top: 140px; }
+  .categories__block p {
+    font-family: robotolight, Arial, sans-serif;
+    font-size: 16px;
+    color: white; }
+
+.categories__block1 {
+  background-image: url(../img/categories-photo1.jpg); }
+
+.categories__block2 {
+  background-image: url(../img/categories-photo2.jpg); }
+
+.categories__block3 {
+  background-image: url(../img/categories-photo3.jpg); }
+
+.categories__block1:hover::before,
+.categories__block2:hover::before,
+.categories__block3:hover::before {
+  display: block; }
+
+.categories__block1::before,
+.categories__block2::before,
+.categories__block3::before {
+  display: none;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 288px solid transparent;
+  border-left: 346px solid rgba(252, 255, 25, 0.2);
+  border-bottom: 0 solid transparent; }
+
+.categories__but {
+  display: none;
+  padding: 12px 21px;
+  border: 2px solid white;
+  color: white;
+  border-radius: 10px;
+  font-family: robotobold, Arial, sans-serif;
+  font-size: 12px;
+  position: absolute;
+  bottom: 30px;
+  left: 111px; }
+
+.categories__block1:hover .categories__but,
+.categories__block2:hover .categories__but,
+.categories__block3:hover .categories__but {
+  display: inline; }
