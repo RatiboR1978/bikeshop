@@ -543,7 +543,8 @@ img {
   right: 35px;
   opacity: 0.5; }
 
-.slider__but--active {
+.slider__left-but:hover,
+.slider__right-but:hover {
   opacity: 1; }
 
 .slider__scroll {
