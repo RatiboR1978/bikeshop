@@ -1,0 +1,72 @@
+.bikes {
+  padding-bottom: 40px;
+}
+
+.bikes__title {
+  text-align: center;
+  margin-top: 75px;
+}
+
+.bikes__wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bikes__item {
+  width: 490px;
+}
+
+.bikes__block-text {
+  h3 {
+    font-family: robotobold, Arial, sans-serif;
+    font-size: 15px;
+
+    margin: 0 0 5px;
+  }
+  p {
+    font-size: 15px;
+    margin: 0;
+  }
+}
+
+.bikes__select {
+  width: 144px;
+  height: 43px;
+  border-radius: 7px;
+  font-family: robotobold, Arial, sans-serif;
+  font-size: 12px;
+  padding-left: 15px;
+  outline: none;
+  line-height: 1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../img/arrow.jpg) no-repeat;
+  background-size: 15%;
+  background-position: 90% 50%;
+}
+
+.bikes__but {
+  margin-left: 5px;
+  width: 94px;
+  height: 43px;
+  background-color: #b7b7b7;
+  color: white;
+  font-family: robotobold, Arial, sans-serif;
+  font-size: 12px;
+  border: none;
+  border-radius: 7px;
+  outline: none;
+}
+
+.bikes__but:hover {
+  background-color: black;
+  color: #fcff19;
+}
+
+.bikes__block-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
