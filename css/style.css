@@ -689,6 +689,7 @@ img {
 .bikes__select {
   width: 144px;
   height: 43px;
+  border: 1px solid #8f8f8f;
   border-radius: 7px;
   font-family: robotobold, Arial, sans-serif;
   font-size: 12px;
@@ -699,8 +700,11 @@ img {
   -moz-appearance: none;
   appearance: none;
   background: url(../img/arrow.jpg) no-repeat;
-  background-size: 15%;
+  background-size: 16%;
   background-position: 90% 50%; }
+
+.bikes__select::-ms-expand {
+  display: none; }
 
 .bikes__but {
   margin-left: 5px;
