@@ -27,6 +27,15 @@ img {
 
 
 .container {
-  width: 1200px;
+  width: 300px;
   margin: 0 auto;
+  @media (min-width: 700px) {
+    width: 680px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
 }

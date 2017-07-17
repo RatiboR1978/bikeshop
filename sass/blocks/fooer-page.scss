@@ -4,19 +4,35 @@
 }
 
 .footer-page__list {
-  float: right;
+  list-style-type: none;
+  text-align: center;
   font-family: robotobold, Arial, sans-serif;
   font-size: 15px;
+  padding-left: 0;
   li {
-    display: inline-block;
-    margin-right: 35px;
+    margin-bottom: 10px;
     a {
       color: black;
     }
   }
+  @media (min-width: 700px) {
+    li {
+      display: inline-block;
+      margin-right: 35px;
+      margin-bottom: 0;
+    }
+  }
+  @media (min-width: 1200px) {
+    float: right;
+  }
 }
 
 .footer-page__shop-icon {
-  float: left;
+  width: 115px;
+  margin: 0 auto;
+  @media (min-width: 1200px) {
+    float: left;
+    margin: 0;
+  }
 }
 

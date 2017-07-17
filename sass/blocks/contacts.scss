@@ -16,16 +16,20 @@
 }
 
 .contacts__form {
-  width: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  @media (min-width: 700px) {
+    width: 450px;
+  }
 }
 
 .contacts__wrap {
   input {
-    width: 193px;
+    display: block;
+    margin: 0 auto;
+    width: 280px;
     height: 43px;
     border-radius: 7px;
     border: 1px solid #dadada;
@@ -35,7 +39,20 @@
     padding-left: 20px;
     color: #808080;
   }
+  input:first-child {
+    margin-bottom: 21px;
+  }
   margin-bottom: 20px;
+  @media (min-width: 700px) {
+    input {
+      display: inline;
+      width: 193px;
+      margin: 0;
+    }
+    input:first-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .contacts__name {
@@ -43,7 +60,7 @@
 }
 
 .contacts__email {
-  width: 428px;
+  width: 280px;
   border-radius: 7px;
   border: 1px solid #dadada;
   font-family: robotoregular, Arial, sans-serif;
@@ -53,10 +70,13 @@
   color: #808080;
   height: 43px;
   margin-bottom: 20px;
+  @media (min-width: 700px) {
+    width: 428px;
+  }
 }
 
 .contacts__text {
-  width: 428px;
+  width: 280px;
   border-radius: 7px;
   border: 1px solid #dadada;
   font-family: robotoregular, Arial, sans-serif;
@@ -67,10 +87,13 @@
   height: 127px;
   margin-bottom: 20px;
   textarea::placeholder { color: #808080; }
+  @media (min-width: 700px) {
+    width: 428px;
+  }
 }
 
 .contacts__submit {
-  width: 450px;
+  width: 302px;
   border-radius: 7px;
   background-color: #b7b7b7;
   height: 43px;
@@ -79,6 +102,9 @@
   outline: none;
   font-family: robotobold, Arial, sans-serif;
   font-size: 12px;
+  @media (min-width: 700px) {
+    width: 450px;
+  }
 }
 
 .contacts__submit:hover {

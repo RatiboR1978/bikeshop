@@ -12,17 +12,23 @@
 .slider__left-but {
   position: absolute;
   z-index: 10;
-  top: 450px;
+  top: 750px;
   left: 35px;
   opacity: 0.5;
+  @media (min-width: 700px) {
+    top: 450px;
+  }
 }
 
 .slider__right-but {
   position: absolute;
   z-index: 10;
-  top: 450px;
+  top: 750px;
   right: 35px;
   opacity: 0.5;
+  @media (min-width: 700px) {
+    top: 450px;
+  }
 }
 
 .slider__left-but:hover,
@@ -31,19 +37,36 @@
 }
 
 .slider__scroll {
-  position: relative;
-  z-index: 10;
-  margin: 0 auto;
-  width: 66px;
-  margin-top: 295px;
+  display: none;
+  @media (min-width: 700px) {
+    display: block;
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+    width: 66px;
+    margin-top: 245px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 295px;
+  }
 }
 
 .slider__line {
-  width: 384px;
-  height: 4px;
-  background-color: #fcff19;
-  position: absolute;
-  z-index: 10;
-  top: 978px;
-  left: 384px;
+  display: none;
+  @media (min-width: 700px){
+    display: block;
+    width: 284px;
+    height: 4px;
+    background-color: #fcff19;
+    position: absolute;
+    z-index: 10;
+    top: 978px;
+    left: 384px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 384px;
+  }
+
 }
