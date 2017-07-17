@@ -669,7 +669,9 @@ img {
   left: 75px; }
 
 .contacts {
-  background: url("../img/contacts-bg.jpg") no-repeat; }
+  background: url("../img/contacts-bg.jpg") no-repeat;
+  background-size: cover;
+  padding-bottom: 80px; }
   .contacts h2 {
     padding-top: 65px;
     text-align: center;
@@ -690,7 +692,7 @@ img {
 .contacts__wrap {
   margin-bottom: 20px; }
   .contacts__wrap input {
-    width: 194px;
+    width: 193px;
     height: 43px;
     border-radius: 7px;
     border: 1px solid #dadada;
@@ -740,8 +742,7 @@ img {
   border: none;
   outline: none;
   font-family: robotobold, Arial, sans-serif;
-  font-size: 12px;
-  margin-bottom: 80px; }
+  font-size: 12px; }
 
 .contacts__submit:hover {
   background-color: black;
@@ -810,3 +811,20 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+
+.footer-page {
+  background-color: #fcff19;
+  padding: 15px 0; }
+
+.footer-page__list {
+  float: right;
+  font-family: robotobold, Arial, sans-serif;
+  font-size: 15px; }
+  .footer-page__list li {
+    display: inline-block;
+    margin-right: 35px; }
+    .footer-page__list li a {
+      color: black; }
+
+.footer-page__shop-icon {
+  float: left; }

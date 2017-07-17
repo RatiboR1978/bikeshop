@@ -1,0 +1,22 @@
+.footer-page {
+  background-color: #fcff19;
+  padding: 15px 0;
+}
+
+.footer-page__list {
+  float: right;
+  font-family: robotobold, Arial, sans-serif;
+  font-size: 15px;
+  li {
+    display: inline-block;
+    margin-right: 35px;
+    a {
+      color: black;
+    }
+  }
+}
+
+.footer-page__shop-icon {
+  float: left;
+}
+
